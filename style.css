@@ -1,0 +1,134 @@
+.attribution { font-size: 11px; text-align: center;
+    color: hsl(228, 45%, 44%);
+    display: inline-block;
+    margin-top: 600px;
+
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+p{
+    font-size: 14px;
+}
+    
+body{
+    background-color: hsl(30, 38%, 92%);
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 600px;
+    height: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+}
+.pic{
+    width: 100%;
+    height: 100%;
+}
+.aroma{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.right-side{
+    width: 100%;
+    height: 100%;
+    background-color: hsl(0, 0%, 100%);
+    
+    
+}
+.right-content{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin-left: 25px;
+    
+}
+.perf{
+    color: hsl(228, 12%, 48%);
+    letter-spacing: 3px;
+     font-family: 'Montserrat', sans-serif;
+     padding-top: 25px;
+     margin-bottom: 15px;
+     font-size: 12px;
+}
+.right-content h1{
+    font-family: 'Fraunces', serif;
+    color: hsl(212, 21%, 14%);
+    line-height: 32px;
+    width: 200px;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+.text{
+    color: hsl(228, 12%, 48%);
+    font-family: 'Montserrat', sans-serif;
+    width: 240px;
+    line-height: 20px;
+    margin-bottom: 25px;
+}
+
+.sum1{
+    display: inline-block;
+    font-size: 30px;
+    margin-right: 12px;
+    color:hsl(158, 36%, 37%) ;
+    font-family: 'Fraunces', serif;
+    
+}
+.sum2{
+    display: inline-block;
+    color: hsl(228, 12%, 48%) ;
+    text-decoration: line-through;
+    vertical-align: middle;
+}
+.buy{
+    background-color: hsl(158, 36%, 37%);
+    width: 190px;
+    height: 20px;
+    text-align: center;
+    padding: 12px 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+.buy a{
+    text-decoration: none;
+    color: white;
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+}
+.buy:hover{
+    cursor: pointer;
+}
+.buy:active{
+    background-color: hsl(212, 21%, 14%);
+    
+}
+@media(max-width:375px ){
+    .container{
+        display: flex;
+        flex-direction: column;
+        width: 375px;
+    }
+        
+    .pic img{
+        background-image: url(images/image-product-mobile.jpg);
+    }
+    .aroma{
+        object-fit: cover;
+    }
+    .right-side{
+        padding-bottom: 20px;
+    }
+    .right-content{
+        padding-left: 10px;
+    }
+
+}
